@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,13 +79,16 @@
 
 
 
+<meta name="description" content="Contact me via buptgonghe@gmail.com or he-gong@qq.com">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="He Gong&#39;s website">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
+<meta property="og:site_name" content="He Gong&#39;s website">
+<meta property="og:description" content="Contact me via buptgonghe@gmail.com or he-gong@qq.com">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="He Gong&#39;s website">
+<meta name="twitter:description" content="Contact me via buptgonghe@gmail.com or he-gong@qq.com">
 
 
 
@@ -121,7 +124,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>He Gong's website</title>
   
 
 
@@ -133,7 +136,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -152,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">He Gong's website</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -232,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/17/Build-Github-Page-with-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="He Gong">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="He Gong's website">
     </span>
 
     
@@ -248,7 +251,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/17/Build-Github-Page-with-Hexo/" itemprop="url">How to build your gitpage with Hexo</a></h1>
+                <a class="post-title-link" href="/2018/10/17/Build-Github-Page-with-Hexo/" itemprop="url">如何用Github page + Hexo创建个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -300,20 +303,24 @@
       
         
           
-            <p>关于如何用Github Pages + Hexo搭建博客<br>我参考了两篇文章：<br><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="noopener">https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/</a><br><a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener">https://my.oschina.net/ryaneLee/blog/638440</a></p>
-<h1 id="1-安装Git和Node-js"><a href="#1-安装Git和Node-js" class="headerlink" title="1. 安装Git和Node.js"></a>1. 安装<code>Git</code>和<code>Node.js</code></h1><p>安装git的时候选择用Linux的常见命令，这样会比较方便。<br>安装以后，单击鼠标右键，出现<code>git bash here</code>，这是一个类似Linux下的bash，很方便。后面的操作都是在这里完成，不再赘述。<br>接下来安装Node.js，它的包安装管理器是<code>npm</code>，就像python的<code>pip</code>、ubuntu的<code>dpkg</code>一样。<br><code>Hexo</code>其实是Node.js的一个包，所以必须先装Node.js。</p>
-<h1 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2. 安装Hexo"></a>2. 安装Hexo</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save #如果这步安装失败，可以等到第7步再安装</span><br></pre></td></tr></table></figure>
-<h1 id="3-在本地新建Hexo项目"><a href="#3-在本地新建Hexo项目" class="headerlink" title="3. 在本地新建Hexo项目"></a>3. 在本地新建Hexo项目</h1><p>先创建你的工程文件夹，启动命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init gitpage</span><br><span class="line">cd gitpage</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<h1 id="4-在github新建一个项目并下载下来"><a href="#4-在github新建一个项目并下载下来" class="headerlink" title="4. 在github新建一个项目并下载下来"></a>4. 在github新建一个项目并下载下来</h1><p>命名为<code>username.github.io</code>，其中username指的是你的用户名。<br>将这个新建的工程拷贝到<code>.deploy/he-gong.github.io</code>文件夹中，作为备份，这个文件夹跟github上的内容一样，便于我们查看。<br><code>git clone https://github.com/he-gong/he-gong.github.io.git .deploy/he-gong.github.io</code></p>
-<h1 id="5-新建一个发布脚本，但是先不要发布"><a href="#5-新建一个发布脚本，但是先不要发布" class="headerlink" title="5. 新建一个发布脚本，但是先不要发布"></a>5. 新建一个发布脚本，但是先不要发布</h1><p>新建<code>deploy.sh</code>文件，把下面的代码拷贝进去（可以不去掉注释），以后每次修改完文章，用<code>bash deploy.sh</code>即可提交。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo generate #编译你的博客，生成静态网页，放到public文件夹中。这个命令的缩写是hexo g，注意不是hexo -g</span><br><span class="line">cp -R public/* .deploy/he-gong.github.io #将public文件夹中的网页拷贝到我们的备份文件夹中</span><br><span class="line">cd .deploy/he-gong.github.io  #进入备份文件夹 </span><br><span class="line">git add . #把整个目录添加进去</span><br><span class="line">git commit -m “update”  #提交更改</span><br><span class="line">git push origin master #上传到github</span><br></pre></td></tr></table></figure></p>
-<h1 id="6-修改配置文件"><a href="#6-修改配置文件" class="headerlink" title="6. 修改配置文件"></a>6. 修改配置文件</h1><p>打开<code>_config.yml</code>,修改最下面的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:he-gong/he-gong.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<h1 id="7-创建本地密钥，并粘贴到github账户中"><a href="#7-创建本地密钥，并粘贴到github账户中" class="headerlink" title="7. 创建本地密钥，并粘贴到github账户中"></a>7. 创建本地密钥，并粘贴到github账户中</h1><p>（我觉得这一步为了hexo d这个功能准备的，如果我们用deploy.sh上传项目可能不需要密钥，因为我们没用到hexo d这个命令，我们用git上传的）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;he-gong@qq.com&quot;</span><br></pre></td></tr></table></figure></p>
-<p>密钥创建后默认会保存在<code>C:\user\你的用户名\.ssh</code>中，复制<code>id_rsa.pub</code>文件的内容<br>进入github，点<code>头像&gt;Setting&gt;SSH and GPG keys&gt;New SSH key</code>，将内容粘贴进去</p>
-<h1 id="8-修改主题："><a href="#8-修改主题：" class="headerlink" title="8. 修改主题："></a>8. 修改主题：</h1><p>根据知乎上的探讨<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">有哪些好看的 Hexo 主题？</a>，我得知 <code>https://github.com/iissnan/hexo-theme-next</code>是最常用的主题，我们以它为例。进入<code>themes</code>文件夹，在命令行下输入<code>git clone https://github.com/iissnan/hexo-theme-next</code>即可创建这个主题的文件夹。<br>然后修改<code>_config.yml</code>的主题那行为 <code>theme: hexo-theme-next</code><br>如果已经有<code>public</code>文件夹，那么执行<code>hexo clean</code>清除<code>public</code>整个文件夹，清除以前主题的网页。<br>然后执行<code>hexo g</code>重新生成<code>public</code>文件夹</p>
-<h1 id="9-新建一篇博客"><a href="#9-新建一篇博客" class="headerlink" title="9. 新建一篇博客"></a>9. 新建一篇博客</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;how to build a gitpage&quot;     #新建文章，`how-to-build-a-gitpage.md`将会出现在gitpage\source\_posts中，并且这个名字即为它的网址</span><br><span class="line">hexo new page &quot;About&quot;     #新建页面，出现在gitpage\About中</span><br></pre></td></tr></table></figure>
+            <p>关于如何用Github Pages + Hexo搭建博客<br>我参考了两篇文章：<br><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="noopener">https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/</a><br><a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener">https://my.oschina.net/ryaneLee/blog/638440</a><br>参考官方文档也可以：<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<h1 id="第一步：在本地搭建你的个人网站"><a href="#第一步：在本地搭建你的个人网站" class="headerlink" title="第一步：在本地搭建你的个人网站"></a>第一步：在本地搭建你的个人网站</h1><h2 id="1-安装Git和Node-js"><a href="#1-安装Git和Node-js" class="headerlink" title="1. 安装Git和Node.js"></a>1. 安装<code>Git</code>和<code>Node.js</code></h2><p>安装git的时候选择用Linux的常见命令，这样会比较方便。<br>安装以后，单击鼠标右键，出现<code>git bash here</code>，这是一个类似Linux下的bash，很方便。后面的操作都是在这里完成，不再赘述。<br>接下来安装Node.js，它的包安装管理器是<code>npm</code>，就像python的<code>pip</code>、ubuntu的<code>dpkg</code>一样。<br><code>Hexo</code>其实是Node.js的一个包，所以必须先装Node.js。</p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2. 安装Hexo"></a>2. 安装<code>Hexo</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save #如果这步安装失败，可以等到第7步再安装</span><br></pre></td></tr></table></figure>
+<h2 id="3-在本地新建Hexo项目"><a href="#3-在本地新建Hexo项目" class="headerlink" title="3. 在本地新建Hexo项目"></a>3. 在本地新建<code>Hexo</code>项目</h2><p>进入你想放网站的文件夹，启动命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init gitpage</span><br><span class="line">cd gitpage</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-修改主题："><a href="#4-修改主题：" class="headerlink" title="4. 修改主题："></a>4. 修改主题：</h2><p>根据知乎上的探讨<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">有哪些好看的 Hexo 主题？</a>，我得知 <code>https://github.com/iissnan/hexo-theme-next</code>是最常用的主题，我们以它为例。进入<code>themes</code>文件夹，在命令行下输入<code>git clone https://github.com/iissnan/hexo-theme-next</code>即可创建这个主题的文件夹。<br>然后修改<code>_config.yml</code>的主题那行为 <code>theme: hexo-theme-next</code><br>如果已经有<code>public</code>文件夹，那么执行<code>hexo clean</code>清除<code>public</code>整个文件夹，清除以前主题的网页。<br>然后执行<code>hexo g</code>重新生成<code>public</code>文件夹</p>
+<h2 id="5-新建一篇博客"><a href="#5-新建一篇博客" class="headerlink" title="5. 新建一篇博客"></a>5. 新建一篇博客</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;how to build a gitpage&quot;     </span><br><span class="line">#新建文章，`how-to-build-a-gitpage.md`将会出现在gitpage\source\_posts中，并且这个名字即为它的网址</span><br><span class="line">hexo new page &quot;About&quot;     #新建页面，出现在gitpage\About中</span><br></pre></td></tr></table></figure>
 <p>打开文件，第一行的<code>title: xxx</code>是你博客的标题，这个标题我想写中文，但是写中文会报错，我干脆写英文算了。</p>
-<h1 id="9-本地测试"><a href="#9-本地测试" class="headerlink" title="9. 本地测试"></a>9. 本地测试</h1><p>执行如下命令，然后打开浏览器，进入<code>localhost:4000</code>即可看到效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s #是hexo server的缩写，</span><br></pre></td></tr></table></figure></p>
-<h1 id="10-发布的github上："><a href="#10-发布的github上：" class="headerlink" title="10. 发布的github上："></a>10. 发布的github上：</h1><p>执行我们保存的脚本<code>bash deploy.sh</code>可以。<br>也可以用<code>hexo d -g</code>即生成并部署，也可以。</p>
+<h2 id="6-本地测试"><a href="#6-本地测试" class="headerlink" title="6. 本地测试"></a>6. 本地测试</h2><p>执行如下命令，然后打开浏览器，进入<code>localhost:4000</code>即可看到效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s #是hexo server的缩写，</span><br></pre></td></tr></table></figure></p>
+<h1 id="第二步：将你的网站上传到github（两个方案选其一即可）"><a href="#第二步：将你的网站上传到github（两个方案选其一即可）" class="headerlink" title="第二步：将你的网站上传到github（两个方案选其一即可）"></a>第二步：将你的网站上传到github（两个方案选其一即可）</h1><h2 id="方案1：用hexo-d来部署网站，这是官方推荐的方式，建议用这个方法"><a href="#方案1：用hexo-d来部署网站，这是官方推荐的方式，建议用这个方法" class="headerlink" title="方案1：用hexo d来部署网站，这是官方推荐的方式，建议用这个方法"></a>方案1：用hexo d来部署网站，这是官方推荐的方式，建议用这个方法</h2><h3 id="1-修改配置文件，打开-config-yml-修改最下面的"><a href="#1-修改配置文件，打开-config-yml-修改最下面的" class="headerlink" title="1. 修改配置文件，打开_config.yml,修改最下面的"></a>1. 修改配置文件，打开<code>_config.yml</code>,修改最下面的</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:he-gong/he-gong.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="2-创建本地密钥，并粘贴到github账户中"><a href="#2-创建本地密钥，并粘贴到github账户中" class="headerlink" title="2.创建本地密钥，并粘贴到github账户中"></a>2.创建本地密钥，并粘贴到github账户中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;he-gong@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>执行以后，密钥创建后默认会保存在<code>C:\user\你的用户名\.ssh</code>中，复制<code>id_rsa.pub</code>文件的内容<br>进入github，点<code>头像&gt;Setting&gt;SSH and GPG keys&gt;New SSH key</code>，将复制的内容粘贴进去</p>
+<h3 id="3-将网站发布到github上"><a href="#3-将网站发布到github上" class="headerlink" title="3. 将网站发布到github上"></a>3. 将网站发布到github上</h3><p>执行 <code>hexo d -g</code> 即生成(generate)并部署(deploy)</p>
+<h2 id="方案2：用git来上传网站，优点是不需要搞密钥那些东西，缺点是，占空间多，而且不是官方推荐的方法"><a href="#方案2：用git来上传网站，优点是不需要搞密钥那些东西，缺点是，占空间多，而且不是官方推荐的方法" class="headerlink" title="方案2：用git来上传网站，优点是不需要搞密钥那些东西，缺点是，占空间多，而且不是官方推荐的方法"></a>方案2：用git来上传网站，优点是不需要搞密钥那些东西，缺点是，占空间多，而且不是官方推荐的方法</h2><h3 id="1-在github新建一个项目并下载下来"><a href="#1-在github新建一个项目并下载下来" class="headerlink" title="1. 在github新建一个项目并下载下来"></a>1. 在github新建一个项目并下载下来</h3><p>新建一个项目，命名为<code>username.github.io</code>，其中username指的是你的用户名，必须这样命名才能用。<br>将这个新建的工程拷贝到<code>.deploy/he-gong.github.io</code>文件夹中，作为备份，这个文件夹跟github上的内容一样，便于我们查看。<br><code>git clone https://github.com/he-gong/he-gong.github.io.git .deploy/he-gong.github.io</code></p>
+<h3 id="2-新建一个发布脚本，但是先不要发布"><a href="#2-新建一个发布脚本，但是先不要发布" class="headerlink" title="2. 新建一个发布脚本，但是先不要发布"></a>2. 新建一个发布脚本，但是先不要发布</h3><p>新建<code>deploy.sh</code>文件，把下面的代码拷贝进去（可以不去掉注释），以后每次修改完文章，用<code>bash deploy.sh</code>即可提交。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo generate #编译你的博客，生成静态网页，放到public文件夹中。这个命令的缩写是hexo g，注意不是hexo -g</span><br><span class="line">cp -R public/* .deploy/he-gong.github.io #将public文件夹中的网页拷贝到我们的备份文件夹中</span><br><span class="line">cd .deploy/he-gong.github.io  #进入备份文件夹 </span><br><span class="line">git add . #把整个目录添加进去</span><br><span class="line">git commit -m “update”  #提交更改</span><br><span class="line">git push origin master #上传到github</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-发布的github上："><a href="#3-发布的github上：" class="headerlink" title="3. 发布的github上："></a>3. 发布的github上：</h3><p>执行我们保存的脚本<code>bash deploy.sh</code>可以。</p>
+<p>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</p>
+<h1 id="第三步：美化你的网站"><a href="#第三步：美化你的网站" class="headerlink" title="第三步：美化你的网站"></a>第三步：美化你的网站</h1><h2 id="1-配置网站的基本信息"><a href="#1-配置网站的基本信息" class="headerlink" title="1. 配置网站的基本信息"></a>1. 配置网站的基本信息</h2><p>打开<code>_config.yml</code>配置文件：修改下面的信息，参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方文档:配置|Hexo</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: He Gong&apos;s website</span><br><span class="line">subtitle: </span><br><span class="line">description: Contact me via buptgonghe@gmail.com or he-gong@qq.com</span><br><span class="line">keywords:</span><br><span class="line">author: He Gong</span><br><span class="line">language:</span><br><span class="line">- en #第一种语言是主页的默认语言</span><br><span class="line">- zh-Hans #因为主题的语言文件夹 themes\hexo-theme-next\languages 下有一个zh-Hans.yml，所以这里才用这个名字，如果你的主题名称不一样需要更改</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-修改你的文章的front-matter"><a href="#2-修改你的文章的front-matter" class="headerlink" title="2. 修改你的文章的front matter"></a>2. 修改你的文章的front matter</h2><p>文章的开头部分是这个文章的相关信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 如何用Github page + Hexo创建个人博客</span><br><span class="line">language: zh-Hans   #这个语言设置，会改变这篇博客上面的按钮的语言</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -365,13 +372,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/17/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="He Gong">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="He Gong's website">
     </span>
 
     
@@ -512,8 +519,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">He Gong</p>
+              <p class="site-description motion-element" itemprop="description">Contact me via buptgonghe@gmail.com or he-gong@qq.com</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -568,7 +575,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">He Gong</span>
 
   
 </div>
