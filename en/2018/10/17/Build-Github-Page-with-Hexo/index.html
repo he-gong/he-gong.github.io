@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="This tutorial is really easy with the premise that you are familiar with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to refers to o">
+<meta name="description" content="This tutorial is really easy with the premise that you have basic knowledge with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to ref">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to built your blog with Github page and Hexo">
 <meta property="og:url" content="http://he-gong.github.com/2018/10/17/Build-Github-Page-with-Hexo/index.html">
 <meta property="og:site_name" content="He Gong&#39;s Blog">
-<meta property="og:description" content="This tutorial is really easy with the premise that you are familiar with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to refers to o">
+<meta property="og:description" content="This tutorial is really easy with the premise that you have basic knowledge with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to ref">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-10-18T00:36:52.886Z">
+<meta property="og:updated_time" content="2018-10-18T01:37:29.667Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to built your blog with Github page and Hexo">
-<meta name="twitter:description" content="This tutorial is really easy with the premise that you are familiar with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to refers to o">
+<meta name="twitter:description" content="This tutorial is really easy with the premise that you have basic knowledge with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to ref">
 
 
 
@@ -299,7 +299,7 @@
       
 
       
-        <p>This tutorial is really easy with the premise that you are familiar with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to refers to other related tutorials when you are confused with something. I also hope to make this tutorial complete so if any question welcome to send me an email via buptgonghe at gmail dot com.</p>
+        <p>This tutorial is really easy with the premise that you have basic knowledge with git, bash, github, html. However, I understand that most people are not familiar with these. Then maybe you have to refers to other related tutorials when you are confused with something. It is not tough because you only need to learn some basic things. I also hope to make this tutorial complete so if any question welcome to send me an email via buptgonghe at gmail dot com. Maybe I will add a simple tutorial about the basic skills used in this tutorial.</p>
 <h1 id="Step-1：Build-a-demo-locally-in-your-computer"><a href="#Step-1：Build-a-demo-locally-in-your-computer" class="headerlink" title="Step 1：Build a demo locally in your computer"></a>Step 1：Build a demo locally in your computer</h1><h2 id="1-Install-Git-and-Node-js"><a href="#1-Install-Git-and-Node-js" class="headerlink" title="1. Install Git and Node.js"></a>1. Install <code>Git</code> and <code>Node.js</code></h2><p>Installing <code>Git</code> and <code>Node.js</code> is easy. You can refers to their official sites and other tutorial. <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Download Git</a> and <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Download Node.js</a><br>This tutorial is for normal people so I assume that you are using Windows. There are options when you install git and I recommend you to select that “use common command in Linux” because that’s more convenient.<br>After installation，you can click the right button of your mouse anywhere, and there will be a new option of <code>git bash here</code>. This is a tool the same as Linux. It is really convenient. Please enter the directory of your project and open this bash. All the <code>Commands</code> in this article will be executed here. (Please notice: <code>command</code> is different from <code>code</code>. <code>command</code> is executed in bash and <code>code</code> is written in files)<br>Next, you should install <code>Node.js</code>，Its package manager is called <code>npm</code>, which is used to install packages of <code>Node.js</code>.<br>Actually <code>Hexo</code> is a package of <code>Node.js</code>，so you have to install <code>Node.js</code> first. </p>
 <h2 id="2-Install-Hexo"><a href="#2-Install-Hexo" class="headerlink" title="2. Install Hexo"></a>2. Install <code>Hexo</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save #actually this line could be done after the sixed step</span><br></pre></td></tr></table></figure>
 <h2 id="3-Create-a-project-of-Hexo-locally-in-your-computer"><a href="#3-Create-a-project-of-Hexo-locally-in-your-computer" class="headerlink" title="3. Create a project of Hexo locally in your computer"></a>3. Create a project of <code>Hexo</code> locally in your computer</h2><p>Enter the folder that you want to place your website and execute the following commands:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init gitpage</span><br><span class="line">cd gitpage</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
