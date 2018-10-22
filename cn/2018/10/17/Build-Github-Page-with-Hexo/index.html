@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。 第一步：在本地搭建你的个人网站1. 安">
+<meta name="description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何用Github page + Hexo创建个人博客">
 <meta property="og:url" content="http://he-gong.github.com/2018/10/17/Build-Github-Page-with-Hexo/index.html">
 <meta property="og:site_name" content="宫鹤的博客">
-<meta property="og:description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。 第一步：在本地搭建你的个人网站1. 安">
+<meta property="og:description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-10-21T16:14:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用Github page + Hexo创建个人博客">
-<meta name="twitter:description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。 第一步：在本地搭建你的个人网站1. 安">
+<meta name="twitter:description" content="这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。">
 
 
 
@@ -309,7 +309,7 @@
       
 
       
-        <p>这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。</p>
+        <p>这份教程十分简单，如果你用过github, bash, git, html的话。但是我很清楚大部分人是不熟悉的。那么当你觉得我写的不清楚的时候，可能你需要参考其他的资料。不过我还是希望这份教程能更完善，所以有问题可以发送到我的qq邮箱he-gong at qq dot com。未来我可能会更新一些关于github, bash, git, html的基本教程。<br><a id="more"></a></p>
 <h1 id="第一步：在本地搭建你的个人网站"><a href="#第一步：在本地搭建你的个人网站" class="headerlink" title="第一步：在本地搭建你的个人网站"></a>第一步：在本地搭建你的个人网站</h1><h2 id="1-安装Git和Node-js"><a href="#1-安装Git和Node-js" class="headerlink" title="1. 安装Git和Node.js"></a>1. 安装<code>Git</code>和<code>Node.js</code></h2><p>安装git的时候选择用Linux的常见命令，这样会比较方便。<br>安装以后，单击鼠标右键，出现<code>git bash here</code>，这是一个类似Linux下的bash，很方便。后面的操作都是在这里完成，不再赘述。<br>接下来安装Node.js，它的包安装管理器是<code>npm</code>，就像python的<code>pip</code>、ubuntu的<code>dpkg</code>一样。<br><code>Hexo</code>其实是Node.js的一个包，所以必须先装Node.js。</p>
 <h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2. 安装Hexo"></a>2. 安装<code>Hexo</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save #如果这步安装失败，可以等到第7步再安装</span><br></pre></td></tr></table></figure>
 <h2 id="3-在本地新建Hexo项目"><a href="#3-在本地新建Hexo项目" class="headerlink" title="3. 在本地新建Hexo项目"></a>3. 在本地新建<code>Hexo</code>项目</h2><p>进入你想放网站的文件夹，启动命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init gitpage</span><br><span class="line">cd gitpage</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
