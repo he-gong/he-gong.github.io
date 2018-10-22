@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="针对谷歌浏览器的方法针对Linux系统的方法首先安装Ruby12# sudo yum install ruby # CentOS, Fedora, RHEL Systemsudo apt-get install ruby-full # Debian or Ubuntu System 创建一个文件夹存放程序，在后文假定这个文件夹的名字叫“project”12345678910# 首先进入projec">
+<meta name="description" content="本文提供两种方法导出聊天记录：  使用谷歌浏览器 在Linux系统下使用 https://github.com/tvdstaaij/telegram-history-dump 和 https://github.com/vysheng/tg.git   针对谷歌浏览器的方法 用这个插件针对Linux系统的方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何导出Telegram的聊天记录">
 <meta property="og:url" content="http://he-gong.github.com/2018/10/19/How-to-export-history-of-telegram/index.html">
 <meta property="og:site_name" content="宫鹤的博客">
-<meta property="og:description" content="针对谷歌浏览器的方法针对Linux系统的方法首先安装Ruby12# sudo yum install ruby # CentOS, Fedora, RHEL Systemsudo apt-get install ruby-full # Debian or Ubuntu System 创建一个文件夹存放程序，在后文假定这个文件夹的名字叫“project”12345678910# 首先进入projec">
+<meta property="og:description" content="本文提供两种方法导出聊天记录：  使用谷歌浏览器 在Linux系统下使用 https://github.com/tvdstaaij/telegram-history-dump 和 https://github.com/vysheng/tg.git   针对谷歌浏览器的方法 用这个插件针对Linux系统的方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-19T16:14:00.000Z">
+<meta property="og:updated_time" content="2018-10-21T16:14:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何导出Telegram的聊天记录">
-<meta name="twitter:description" content="针对谷歌浏览器的方法针对Linux系统的方法首先安装Ruby12# sudo yum install ruby # CentOS, Fedora, RHEL Systemsudo apt-get install ruby-full # Debian or Ubuntu System 创建一个文件夹存放程序，在后文假定这个文件夹的名字叫“project”12345678910# 首先进入projec">
+<meta name="twitter:description" content="本文提供两种方法导出聊天记录：  使用谷歌浏览器 在Linux系统下使用 https://github.com/tvdstaaij/telegram-history-dump 和 https://github.com/vysheng/tg.git   针对谷歌浏览器的方法 用这个插件针对Linux系统的方法">
 
 
 
@@ -186,6 +186,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/cn/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -299,7 +309,13 @@
       
 
       
-        <h1 id="针对谷歌浏览器的方法"><a href="#针对谷歌浏览器的方法" class="headerlink" title="针对谷歌浏览器的方法"></a>针对谷歌浏览器的方法</h1><h1 id="针对Linux系统的方法"><a href="#针对Linux系统的方法" class="headerlink" title="针对Linux系统的方法"></a>针对Linux系统的方法</h1><p>首先安装Ruby<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># sudo yum install ruby # CentOS, Fedora, RHEL System</span><br><span class="line">sudo apt-get install ruby-full # Debian or Ubuntu System</span><br></pre></td></tr></table></figure></p>
+        <p>本文提供两种方法导出聊天记录：</p>
+<ol>
+<li>使用谷歌浏览器</li>
+<li>在Linux系统下使用 <a href="https://github.com/tvdstaaij/telegram-history-dump" target="_blank" rel="noopener">https://github.com/tvdstaaij/telegram-history-dump</a> 和 <a href="https://github.com/vysheng/tg.git" target="_blank" rel="noopener">https://github.com/vysheng/tg.git</a> </li>
+</ol>
+<h1 id="针对谷歌浏览器的方法-用这个插件"><a href="#针对谷歌浏览器的方法-用这个插件" class="headerlink" title="针对谷歌浏览器的方法 用这个插件"></a>针对谷歌浏览器的方法 用这个<a href="https://chrome.google.com/webstore/detail/save-telegram-chat-histor/kgldnbjoeinkkgpphaaljlfhfdbndfjc?hl=en" target="_blank" rel="noopener">插件</a></h1><h1 id="针对Linux系统的方法"><a href="#针对Linux系统的方法" class="headerlink" title="针对Linux系统的方法"></a>针对Linux系统的方法</h1><a id="more"></a>
+<p>首先安装Ruby<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># sudo yum install ruby # CentOS, Fedora, RHEL System</span><br><span class="line">sudo apt-get install ruby-full # Debian or Ubuntu System</span><br></pre></td></tr></table></figure></p>
 <p>创建一个文件夹存放程序，在后文假定这个文件夹的名字叫“project”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 首先进入project文件夹</span><br><span class="line">git clone https://github.com/tvdstaaij/telegram-history-dump</span><br><span class="line">git clone --recursive https://github.com/vysheng/tg.git</span><br><span class="line">cd tg # 现在我们在 project/tg 文件夹中</span><br><span class="line">sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson-dev libpython-dev make # 针对系统ubuntu, Debian. 其他系统请参考 https://github.com/vysheng/tg</span><br><span class="line">sudo apt-get install libssl1.0-dev # 不安装ssl的话 可能会遇到这个问题：https://github.com/vysheng/tg/issues/1411</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">cd bin // 现在我们在 project/tg/bin 这个文件夹中</span><br><span class="line">telegram-cli --json -P 9009 //启动客户端，它会要求你输入手机号，然后就可以登陆了</span><br></pre></td></tr></table></figure></p>
 <p>在project文件夹中再打开一个终端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd telegram-history-dump </span><br><span class="line">./telegram-history-dump.rb</span><br></pre></td></tr></table></figure></p>
 <p>开始导出，导出结束后, 聊天记录文件会保存在 <code>project/telegram-history-dump/output/json</code> 文件夹中，格式为jsonl<br>然后可以关闭tg客户端了</p>
@@ -449,7 +465,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#针对谷歌浏览器的方法"><span class="nav-number">1.</span> <span class="nav-text">针对谷歌浏览器的方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#针对Linux系统的方法"><span class="nav-number">2.</span> <span class="nav-text">针对Linux系统的方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#针对谷歌浏览器的方法-用这个插件"><span class="nav-number">1.</span> <span class="nav-text">针对谷歌浏览器的方法 用这个插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#针对Linux系统的方法"><span class="nav-number">2.</span> <span class="nav-text">针对Linux系统的方法</span></a></li></ol></div>
             
 
           </div>
